@@ -1,5 +1,5 @@
-resource "azurerm_key_vault_certificate_contacts" "key_vault_certificate_contactss" {
-  for_each = var.key_vault_certificate_contactss
+resource "azurerm_key_vault_certificate_contacts" "key_vault_certificate_contactses" {
+  for_each = var.key_vault_certificate_contactses
 
   key_vault_id = each.value.key_vault_id
 
