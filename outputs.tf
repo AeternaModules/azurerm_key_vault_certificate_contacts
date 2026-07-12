@@ -1,3 +1,7 @@
+output "key_vault_certificate_contactses_id" {
+  description = "Map of id values across all key_vault_certificate_contactses, keyed the same as var.key_vault_certificate_contactses"
+  value       = { for k, v in azurerm_key_vault_certificate_contacts.key_vault_certificate_contactses : k => v.id }
+}
 output "key_vault_certificate_contactses_contact" {
   description = "Map of contact values across all key_vault_certificate_contactses, keyed the same as var.key_vault_certificate_contactses"
   value       = { for k, v in azurerm_key_vault_certificate_contacts.key_vault_certificate_contactses : k => v.contact }
