@@ -12,11 +12,11 @@ EOT
 
   type = map(object({
     key_vault_id = string
-    contact = optional(object({
+    contact = optional(list(object({
       email = string
       name  = optional(string)
       phone = optional(string)
-    }))
+    })))
   }))
 }
 
