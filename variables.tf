@@ -1,6 +1,6 @@
-variable "key_vault_certificate_contactses" {
+variable "key_vault_certificate_contacts" {
   description = <<EOT
-Map of key_vault_certificate_contactses, attributes below
+Map of key_vault_certificate_contacts, attributes below
 Required:
     - key_vault_id
 Optional:
